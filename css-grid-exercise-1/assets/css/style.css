@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  .cf:before,
+  .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  
+  main{
+    max-width:960px;
+    border:1px solid #000;
+    margin:20px auto;
+    background-image: url("https://assets.codepen.io/7248/grid-1.png");
+    display: grid;
+    gap:50px;
+    grid-template-columns:repeat(6,auto);
+    grid-template-areas:inherit;
+  }
+  
+  header.primary{
+     background: rgba(0, 0, 0, 0.4);
+     width:95.83%;
+     margin:2%;
+     padding:20px;
+     border-radius: 20px;
+     grid-column-start: 1;
+     grid-column-end: 6;
+     grid-row-start: 1;
+     grid-row-end: 2;
+      float: right;
+  }
+  
+  #content{
+     background: rgba(0, 0, 0, 0.6); 
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-left:2.0833%;
+    border-radius: 10px;
+   
+   }
+  
+  aside{
+    background: rgba(0, 0, 0, 0.3);
+    width:30%;
+    border-radius: 10px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left:3%;
+
+  
+
+
+    
+  }
+  footer{
+    background-color: rgba(0, 0, 0, 0.3) ;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    border-radius: 10px;
+    margin: 15px 15px;
+  }

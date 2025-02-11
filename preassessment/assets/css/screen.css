@@ -5,12 +5,17 @@
 }
 body {
 	text-align: center;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	background-image:url(../img/bg-tile.jpg);
-	background-repeat: repeat-x;
-	background-color: #171717;
+	font-family: "Figtree", serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	background-image:url(https://images.pexels.com/photos/2842732/pexels-photo-2842732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height:100%;
+    background-repeat: no-repeat;
+	background-size: cover;
 	font-size: 16px;
 	line-height: 1.5em;
+
 }
 
 #container {
@@ -18,12 +23,37 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	text-align: left;
-	background-color: #ffffffc9;
+	background-color: #2e9999c9;
 	margin-top: 20px;
 	border: 1px solid #CCC;
 }
-#header {	
+#body-main{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 10px;
 }
+#header-main{
+	grid-column:1/5;
+    margin:10px;
+	padding:40px;
+	background-color:paleturquoise;
+	display: flex;
+	clear: both;
+}
+header.primary{
+	grid-column:1/5;
+    margin:10px;
+	padding:40px;
+	background-color:rgb(89, 113, 142);
+	display: flex;
+	border-radius: 10px;
+	clear: both;
+}
+#title h1{
+	text-align: center;
+}
+
+
 #header h1 a{
 	width: 800px; 
 	height: 140px;
@@ -33,9 +63,15 @@ body {
 	white-space: nowrap;
 	overflow:hidden;
   }
+.nav-bar ul {
+	list-style-type: none;
+	background-color: #24d6d9;
+	border-radius: 20px;
+}
 
 #nav {
-	background-color: #0b1c3b;
+	background-color: #1c3daa;
+
 }
 #nav ul {
 	list-style-type: none;
@@ -103,7 +139,7 @@ img {
 	color:#1d8188c6
 }
 footer {
-	background-color:#0b1c3b;
+	background-color:#1c4fac;
 	color: #FFF;
 	height: 50px;
 	padding: 10px;
