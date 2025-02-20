@@ -33,7 +33,7 @@ body {
 	gap: 10px;
 }
 #header-main{
-	grid-column:1/5;
+	grid-column:2/3;
     margin:10px;
 	padding:40px;
 	background-color:paleturquoise;
@@ -44,11 +44,41 @@ header.primary{
 	grid-column:1/5;
     margin:10px;
 	padding:40px;
-	background-color:rgb(89, 113, 142);
+	background-color:rgb(93, 230, 237);
 	display: flex;
 	border-radius: 10px;
 	clear: both;
 }
+#one{
+	list-style-type: none;
+}
+header.primary nav ul li a{
+    border: 3px solid #5FA0D9;
+    border-right:10px solid #5FA0D9;
+    border-radius:10px 0;
+    color:white;
+    display:block;
+    background-color:rgba(56, 213, 219, 0.837);
+    padding:5px 5px 5px 0;
+    text-align:center;
+    transition: .5s;
+    text-decoration:none;
+    margin-top:40px;z
+	list-style-type: none;
+  }
+  header.primary nav ul li a{
+    border: 3px solid #5FA0D9;
+    border-right:10px solid #5FA0D9;
+    border-radius:10px 0;
+    color:white;
+    display:block;
+    background-color:rgba(0,0,0,.6);
+    padding:5px 5px 5px 0;
+    text-align:center;
+    transition: .5s;
+    text-decoration:none;
+    margin-top:40px;
+  }
 #title h1{
 	text-align: center;
 }
@@ -62,44 +92,10 @@ header.primary{
     text-indent: 100%;
 	white-space: nowrap;
 	overflow:hidden;
+	
   }
-.nav-bar ul {
-	list-style-type: none;
-	background-color: #24d6d9;
-	border-radius: 20px;
-}
 
-#nav {
-	background-color: #1c3daa;
 
-}
-#nav ul {
-	list-style-type: none;
-	margin-left: 10px;
-}
-#nav ul li {
-	display: inline;
-	height: 35px;
-	line-height: 35px;
-}
-#nav ul li a {
-	display: inline-block;
-	padding-right: 10px;
-	padding-left: 10px;
-	font-size: 18px;
-}
-#nav ul li a:link, #nav ul li a:visited {
-	text-decoration: none;
-	border-bottom-width: 4px;
-	border-bottom-style: solid;
-	border-bottom-color: #fbfbfc;
-	color: #FFF;
-}
-#nav ul li a:hover {
-	border-bottom-width: 3px;
-	border-bottom-style: solid;
-	border-bottom-color: #22d4ef;
-}
 
 #content {
 	margin: 40px;
@@ -151,3 +147,11 @@ footer {
 	margin-right: 20px;
 	margin-left: 20px;
 }
+@media screen and(max-width:600px) {
+	.row {
+		grid-template-columns:1fr ;
+	}
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+only screen and (min-resolution:200dpi)
