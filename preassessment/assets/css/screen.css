@@ -9,7 +9,7 @@ body {
 	font-optical-sizing: auto;
 	font-weight: <weight>;
 	font-style: normal;
-	background-image:url(https://images.pexels.com/photos/2842732/pexels-photo-2842732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+	background-image:url(https://images.pexels.com/photos/4391607/pexels-photo-4391607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     height:100%;
     background-repeat: no-repeat;
 	background-size: cover;
@@ -41,17 +41,19 @@ body {
 	clear: both;
 }
 header.primary{
-	grid-column:1/5;
+	color:#CCC;
     margin:10px;
-	padding:40px;
-	background-color:rgb(93, 230, 237);
-	display: flex;
+	padding: 10px;
+	background-color:rgb(76, 44, 131);
 	border-radius: 10px;
 	clear: both;
+	grid-column-start: 2;
+	grid-column-end:10 ;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	
 }
-#one{
-	list-style-type: none;
-}
+
 header.primary nav ul li a{
     border: 3px solid #5FA0D9;
     border-right:10px solid #5FA0D9;
@@ -63,7 +65,7 @@ header.primary nav ul li a{
     text-align:center;
     transition: .5s;
     text-decoration:none;
-    margin-top:40px;z
+    margin-top:40px;
 	list-style-type: none;
   }
   header.primary nav ul li a{
@@ -79,6 +81,30 @@ header.primary nav ul li a{
     text-decoration:none;
     margin-top:40px;
   }
+nav{    
+	background-color:rgba(66, 2, 79, 0.832) ;
+    overflow: hidden;
+	list-style-type: none;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 2;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+nav a{
+	float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	
+}
+nav a:hover{
+	background-color: #022348;
+    color: rgb(255, 253, 253);
+}
 #title h1{
 	text-align: center;
 }
@@ -94,6 +120,7 @@ header.primary nav ul li a{
 	overflow:hidden;
 	
   }
+ 
 
 
 
