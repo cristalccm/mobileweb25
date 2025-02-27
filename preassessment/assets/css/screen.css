@@ -7,7 +7,7 @@ body {
 	text-align: center;
 	font-family: "Figtree", serif;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
+	font-weight: normal;
 	font-style: normal;
 	background-image:url(https://images.pexels.com/photos/4391607/pexels-photo-4391607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     height:100%;
@@ -15,7 +15,9 @@ body {
 	background-size: cover;
 	font-size: 16px;
 	line-height: 1.5em;
-
+	--edge: 10px;
+	--value: 24;
+	--unit:var(--unit);
 }
 
 #container {
@@ -80,6 +82,7 @@ header.primary nav ul li a{
     transition: .5s;
     text-decoration:none;
     margin-top:40px;
+
   }
 nav{    
 	background-color:rgba(66, 2, 79, 0.832) ;
