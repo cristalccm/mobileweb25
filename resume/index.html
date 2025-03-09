@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <meta name="description" content="resume">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -17,51 +20,54 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="manifest" href="site.webmanifest">
+  
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
   <header class="container" id="top">
-    <!-- Main navigation -->
+   
     <nav class="primary">
     <ul>  
-      <li><a href="#about">About</a></li>
+    
+     <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
      </ul>  
-   
-  </header> </nav>
-  <!-- Main -->
+   </nav> 
+  </header> 
+
+
   <main itemscope itemtype="http://schema.org/Person" class="container">
     <h1 class="page-title">Cristal Castle-McCall</h1>
     <section id="about">
       <h2>Personal Details</h2>
       <div class="bio">
-      <img itemprop="image" src="https://placehold.co/600x600?text=Headshot" alt="Your Name">
-      <p itemprop="description">Short Bio Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime distinctio numquam atque? Accusantium voluptatum alias similique voluptatibus! Sunt sit reiciendis earum, harum iusto accusantium aspernatur ullam tenetur, fuga fugit, quae voluptatem! Iste aliquid veritatis accusantium et cumque minima molestiae ducimus officiis. Beatae ad consequuntur fuga deleniti atque tempore error.</p>
+      <img itemprop="image" src="assets/img/Headshot.jpg" alt="Cristal Castle-McCall">
+      <p itemprop="description">Detail-oriented beginner web developer with a strong foundation in HTML, CSS, and JavaScript. Proficient in building responsive and visually appealing websites, leveraging Bootstrap for streamlined design and layout. Comfortable using GitHub for version control and collaborative development. Passionate about creating user-friendly web experiences and eager to expand knowledge in modern web technologies.
+      </p>
       </div>  
       <dl class="details">
-        <dt>Cristal Castle-McCall</dt>
+        <dt>Name:</dt>
         <dd itemprop="name">
-          <span itemprop="givenName">First</span> <span itemprop="familyName">Last</span>
+          <span itemprop="givenName">Cristal</span> <span itemprop="familyName">Castle-McCall</span>
         </dd>
-        <dt>Date of birth</dt>
+        <dt>Date of birth:</dt>
         <dd itemprop="birthDate"><time datetime="2000-10-12">04/24/1991</time></dd>
-        <dt>Nationality</dt>
+        <dt>Nationality:</dt>
         <dd itemprop="nationality">United States</dd>
-        <dt>Location</dt>
+        <dt>Location:</dt>
         <dd itemprop="homeLocation">Arkansas</dd>
-        <dt>Telephone</dt>
+        <dt>Telephone:</dt>
         <dd>
           <a itemprop="telephone" href="tel:555.555.5555">870.557.5613</a>
         </dd>
-        <dt>Email</dt>
+        <dt>Email:</dt>
         <dd>
           <a itemprop="email" href="mailto:email@mail.com">ccastle@ualr.edu</a>
         </dd>
-        <dt>Address</dt>
+        <dt>Address:</dt>
   
         <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
           <span itemprop="streetAddress">1080 Fox Hunt Trail</span>
@@ -91,29 +97,32 @@
       
     </section>
     <section id="experience">
-      <h2>Experience</h2>
-      <!-- current job -->
-      <article class="job">
-        <h3 itemprop="jobTitle">Lead Infant Teacher</h3>
-        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <span itemprop="name">Montessori of University Village</span>
-          <span>May 2023 - November 2023</span>
-          <p itemprop="description"><ul>
-            <li>Provided a safe, nurturing environment for infants up to 18 months.</li>
-            <li>Designed and implemented age appropriate curriculum.</li>
-            <li>Developed trusting relationships with families through open communication and daily reports.</li>
-            <li>Trained and supervised assistant teachers to maintain a high-quality classroom experience.</li>
-            <li>Adhered to all state regulations, protocols, and center policies.</li>
-          </ul></p>
-          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-            <a itemprop="url" href="https://www.montessoriuv.com/">montessoriuv.com</a>
-            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Round Rock,TX</span>
-          </span>
-          </span>
+      <h2>Job History</h2>
+  
+       
+      <article class="job" itemscope itemtype="http://schema.org/Organization">
+        <h3 itemprop="name">Lead Infant Teacher</h3>
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name">Montessori of University Village</span>
+        <a itemprop="url" href="https://montessoriuv.com/">montessoriuv.com</a>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="addressLocality">Round Rock, TX</span>
+        </span>
+        </span>
+        <div itemscope itemtype="https://schema.org/EmployeeRole">
+        <span itemprop="startDate" content="2006-02-21T20:00">May 2023</span> - 
+        <span itemprop="endDate" content="2009-02-21T20:00">November 2023</span>
         </div>
+        <p itemprop="description" >  
+          <li>Provided a safe, nurturing environment for infants up to 18 months.</li>
+          <li>Designed and implemented age appropriate curriculum.</li>
+          <li>Developed trusting relationships with families through open communication and daily reports.</li>
+          <li>Trained and supervised assistant teachers to maintain a high-quality classroom experience.</li>
+          <li>Adhered to all state regulations, protocols, and center policies.</li>
+          <li>Observed and tracked infant's developmental progress and sharing updates with parents.</li>
+        </p>
       </article>
-      <!-- Previous Jobs - Notice Slightly Different Format-->
+        
       <article class="job" itemscope itemtype="http://schema.org/Organization">
         <h3 itemprop="name">Lead Infant Teacher</h3>
         <span itemprop="location" itemscope itemtype="http://schema.org/Place">
@@ -143,11 +152,12 @@
         <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Web Design and Development</h3>
         <span itemprop="name">University of Arkansas at Little Rock</span>
         <span itemprop="location" itemscope>Little Rock, AR</span>
+        <br><p class="gap">Note: Persued Bachelor's Degree studies during employment gap.</p>
         <span>2023-2026</span>
       </article>
     </section>
   </main>
-  <!-- Footer -->
+
   <footer>
     <div id="copyright">
       &copy; 2025 Cristal Castle-McCall| <a href="#top">Top</a>
