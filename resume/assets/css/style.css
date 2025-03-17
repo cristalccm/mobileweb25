@@ -1,7 +1,7 @@
 :root{
     --main-bg-color: #efefef;
     --primary-type-color: #222222;
-    --accent-color-1: #5e162a;
+    --accent-color-1: #8f2442;
   }
   
   /* ------ Box Sizing -------*/
@@ -22,11 +22,33 @@
     font-style: normal;
     margin: 0;
     padding:10px;
+    line-height: 1;
   }
 
-  
+  main h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-variant:normal;
+  }
+  main h1:before,
+  main h1:after {
+    background-color: var(--accent-color-1);
+    content: "\a0";
+    flex-grow: 1;
+    height: 1px;
+    position: relative;
+    top: 1.6rem;
+  }
  
-  
+  main h1:before {
+    margin-right: 5px;
+  }
+  main h1:after {
+    margin-left: 5px;
+  }
   img {
     max-width: 100%;
   }
@@ -39,14 +61,27 @@
     padding:10px;
  
   }
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+  }
+  
+
   @media screen and (min-width:768px){
 
  main.container{
   max-width:900px;
   display: grid;
-  grid-template: repeat(2, auto) /1fr;
+  grid-template: repeat(4, auto) /2fr;
   grid-template-areas:
-    "title title"
+    "title title "
     "about about"
     "skills experience"
     ". education"
@@ -55,10 +90,14 @@
   }
 header.container{
 max-width: 900px;
+
+
+
+
 }
   nav.primary ul{
     display: grid;
-    grid-template-columns:38.5% auto ;
+    grid-template-columns: 40% auto ;
    grid-template-areas: 
    "nav nav nav nav"
    ;
@@ -67,29 +106,40 @@ max-width: 900px;
   #about{
     display:grid;
     gap:2em;
-    grid-template-columns: 200px 2fr auto;
+    grid-template-columns: 100px 2fr auto;
     grid-template-areas:
-      "bio details details"
-      "related related related";
+      "bio bio details"
+      ". related related";
   }
   .bio{
     grid-area:bio;
   }
   .details{
     grid-area:details;
+  }.related-links{
+    grid-area:related;
+ 
+    padding-bottom:50px
+  } 
+
+  footer{
+    max-width: 900px;
+    margin-left: 30px;
   }
  }
 
   
-  nav{
-   padding:10px;
-  }
-  nav ul{
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr 4fr 4fr;
-    padding: 15px 15px 0px 15px;
+ nav {
+  padding: 1px;
+}
 
-  }
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 20px 0px 20px;
+}
+
+
   nav li{
     list-style-type: none;
   }
@@ -102,10 +152,11 @@ max-width: 900px;
     color: #222222;
     text-transform: uppercase;
     font-size: 0.75em;
-    background:#ff96b6;
+    background:#f46882;
     transition: background-color 0.5s ease;
     color: #ffffff;
     border-radius:5px;
+    flex-grow: 1 25%;
   }
   nav a:hover{
     background-color: #5e162a;
@@ -131,22 +182,25 @@ font-size: 1rem;
 }
 dt{
   font-weight: 900;
+  font-size: 15px;
   grid-column: 1;
   padding: 10px 0;
-  border-bottom: 2px solid var(--accent-color-1);
+  border-bottom: 3px solid var(--accent-color-1);
 }
 dd{
   margin:0;
   grid-column: 2;
-  padding:10px, 0;
-  border-bottom: 2px solid var(--accent-color-1);
+  padding-top: 10px;
+  border-bottom: 3px solid var(--accent-color-1);
 }
 .related-links{
 display:flex;
-list-style-type: none;
 justify-content: center;
+list-style-type: none;
+
 padding:0;
 gap:20px;
+
 }
 .related-links a {
   border: 2px solid var(--accent-color-1);
@@ -156,11 +210,12 @@ gap:20px;
   color: #222222;
   text-transform: uppercase;
   font-size: 0.75em;
-  background:#ff96b6 ;
+  background:#f46882 ;
   transition: background-color 0.5s ease;
   color: #fff;
   border-radius: 5px;
   display: block;
+ 
 }
 .related-links .svg-inline--fa {
   font-size: 1.8em;
@@ -193,7 +248,7 @@ gap:20px;
 
 footer {
   text-align: center;
-  padding: 20px 0;
+  padding:20px 0;
 }
 .page-title {
   grid-area: title;
@@ -221,5 +276,23 @@ main.container{
     ;
 }
 footer{
-  background-color: #ff96b6;
+  min-width: 420px;
+  
+}
+@media only screen and (max-width: 460px) {
+  .related-links li a svg{display:none;}
+  
+}
+
+@media only screen and (max-width: 395px) {
+.related-links{
+flex-direction:column;
+  }
+  
+.related-links a{
+display:block;
+  }  
+  
+  .related-links li a svg{display:inline-block;}
+  
 }

@@ -108,6 +108,37 @@ nav a:hover{
 	background-color: #022348;
     color: rgb(255, 253, 253);
 }
+#nav{
+    display:flex;
+   padding:10px;
+  }
+ #nav ul{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr 4fr;
+    padding: 15px 15px 0px 15px;
+
+  }
+  #nav li{
+    list-style-type: none;
+
+  }
+  #nav a:link, nav a:visited {
+    display: block;
+    padding: 10px 16px;
+    border: 2px solid var(--accent-color-1);
+    text-align: center;
+    text-decoration: none;
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    background:#365882;
+    transition: background-color 0.5s ease;
+    color: #ffffff;
+    border-radius:5px;
+  }
+  #nav a:hover{
+    background-color: #5e162a;
+  }
 #title h1{
 	text-align: center;
 }
@@ -157,6 +188,7 @@ h4{
 img {
 	float:right;
     display:flex;
+	max-width: 60%;
 	border: 3px solid #1d8188;
     margin: 10px,10px;
 }
