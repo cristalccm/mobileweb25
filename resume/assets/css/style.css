@@ -79,7 +79,9 @@
       display: grid;
       grid-template: repeat(4, auto) /2fr;
       grid-template-areas:
+       
         "title title "
+        "page-title page-title"
         "about about"
         "skills experience"
         "education education"
@@ -106,6 +108,7 @@
         gap:2em;
         grid-template-columns: 200px fr auto;
         grid-template-areas:
+           "page-title page-title"
           "bio bio details"
           ". related related";
       }
@@ -156,6 +159,7 @@ max-width: 900px;
     gap:2em;
     grid-template-columns: 100px 2fr auto;
     grid-template-areas:
+      
       "bio bio details"
       ". related related";
   }
