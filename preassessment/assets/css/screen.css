@@ -68,6 +68,7 @@ header.primary nav ul li a{
     transition: .5s;
     text-decoration:none;
     margin-top:40px;
+	
 	list-style-type: none;
   }
   header.primary nav ul li a{
@@ -101,7 +102,8 @@ nav a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
+	
 	
 }
 nav a:hover{
