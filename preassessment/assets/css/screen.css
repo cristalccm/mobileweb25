@@ -210,6 +210,10 @@ footer {
 	margin-right: 20px;
 	margin-left: 20px;
 }
+footer.main{
+	background-color:rgb(76, 44, 131) ;
+	margin-top: 600px;
+}
 @media screen and(max-width:600px) {
 	.row {
 		grid-template-columns:1fr ;

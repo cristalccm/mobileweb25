@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+body { 
+        text-align: center;
+        font-family: "Figtree", serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        background-color: rgb(203, 134, 218);
+        height:100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 16px;
+        line-height: 1.5em;
+        --edge: 10px;
+        --value: 24;
+        --unit:var(--unit);
+    
+    
+}
+img{
+  display:block;
+  margin: 0;
+}

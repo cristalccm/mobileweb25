@@ -1,0 +1,142 @@
+:root{
+  --main-bg-color:rgb(247, 242, 227);
+  --primary-type-color: #222222;
+  --accent-color-1:rgba(97, 154, 180, 1);
+  --accent-color-2:rgba(51, 109, 135, 1);
+
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+main{
+  padding:2px 30px;
+}
+img {
+  max-width: 100%;
+}
+
+
+.container {
+  max-width:100%; 
+  margin: 0 auto;
+  background:var(--main-bg-color);
+  grid-column-start: 1;
+  grid-column-end: 10;
+  padding:10px;
+}
+body{
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+}
+header.primary{
+  background-color:var(--accent-color-1);
+  height:300px;
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  text-align: center;
+ 
+}
+nav{ 
+  width:100%;
+  
+}
+ nav ul{
+  background-color:var(--accent-color-2);
+  list-style-type: none;
+  padding:20px;
+
+ }
+ nav li { 
+  
+  list-style-type: none;
+  display: inline;
+color: #f2f2f2;
+ }
+ nav a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px;
+padding: 20px;
+ }
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slide-container {
+  max-width: 1000px;
+  max-height: 200px;
+  position: relative;
+  margin: auto;
+  grid-column-start:1;
+  grid-column-end: 10;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (min-width: 992px) {
+  
+}
+@media only screen and (min-width: 768px) {
+  
+}
+@media only screen and (min-width: 460px) {
+  
+}
