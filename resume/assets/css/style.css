@@ -132,11 +132,8 @@
   display: grid;
   grid-template: repeat(4, auto) /2fr;
   grid-template-areas:
-    "title title "
-    "about about"
-    "skills experience"
-    ". education"
-    ;  
+    "intro intro "
+ ;  
 
   }
 header.container{
