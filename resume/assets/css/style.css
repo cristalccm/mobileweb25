@@ -56,8 +56,8 @@
   }
   
  
-  .container {
-    max-width:900px; 
+  main.container {
+    max-width:100%; 
     margin: 0 auto;
     background:#f9f6ee;
     padding:10px;
