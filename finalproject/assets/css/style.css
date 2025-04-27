@@ -419,10 +419,13 @@ footer a {
     margin-top: 100px;
     margin-left: -10px;
   }
-
+  .guests{
+    font-size: 10px;
+  }
   .reviews {
     grid-template-columns: 1fr;
     text-align: center;
+    font-size: 8px;
   }
 }
 
