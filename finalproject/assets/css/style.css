@@ -57,8 +57,8 @@ main.container {
 
 body {
   background-color: var(--main-bg-color);
-  font-family: "basco-std", serif;
-  font-weight: 500;
+  font-family: "abril-display", serif;
+  font-weight: 400;
   font-style: normal;
   display: grid;
   margin: 0;
@@ -69,7 +69,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
   background-color: var(--accent-color-1);
   flex-wrap: wrap;
 }
@@ -81,10 +80,10 @@ body {
   font-family: "Alex Brush", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 3em;
-  margin-left: 10px;
-  margin-top: 10px;
-  padding:10px;
+  font-size: 3.5em;
+
+  
+
 }
 
 
@@ -93,7 +92,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px 10px; 
+  padding:0; 
   background-color: var(--accent-color-1);
  
 }
@@ -109,27 +108,30 @@ body {
 .logo {
   max-width: 140px;
   height: auto;
-
+  margin:0;
+  padding:0;
 }
 
 .header-left h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin: 0;
+  padding: 0;
   color: #040404;
 }
 
 .header-left .head {
   font-family: "Basco-Std", serif;
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #070707;
-  margin: 5px 0 40px;
+  margin: 5px 0 25px;
 }
 
 #topnav {
   width: 100%;
-
-  
+  background-color: var(--accent-color-2);
+  margin:0;
+  padding:0;
 }
 
 .nav-container {
@@ -155,7 +157,7 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 10px 15px;
   margin:40px;
   border-radius: 5px;
@@ -206,29 +208,27 @@ body {
 }
 
 .slideshow {
-  margin-bottom: 40px; 
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
   position: relative;
-  z-index: 1;
+  overflow: hidden;
 }
 
 .slide {
-  width: 100vw;
+  width: 90vw;
   position: relative;
   height: auto;
 }
 
 .slide, .mySlides {
   width: 100%;
-  margin: 0;
+  height:auto;
   padding: 0;
   display: block;
 }
 
-.mySlides {
-  display: none;
-  max-width: 100%;
-}
+
 
 .prev, .next {
   cursor: pointer;
@@ -294,29 +294,33 @@ body {
 
 .slideshow-text {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size:3.5em;
+  padding: 1rem 2rem;
+ text-shadow: 2px 2px #222222;
+  max-width: 90%;
   text-align: center;
-  text-shadow: 2px 2px #555555;
-  padding: 20px;
-  z-index: 2;
-  text-wrap: nowrap;
-
+  box-sizing: border-box;
 }
 
 .slideshow-text h2 {
-  font-size: 2em;
-  margin: 0 0 10px;
+  color: rgb(250, 243, 233);
+  font-size: 6em;
+  font-weight: 500;
+  margin: 0 0 20px;
   font-family: "Alex Brush", cursive;
 }
 
 .intro{
   font-size: 1em;
-  padding: 40px 20px;
+  padding: 40px 80px;
+  margin: 80px;
   box-sizing: border-box;
+}
+.welcome{
+  padding: 20px;
 }
 .intro-section {
   display: flex;
@@ -354,65 +358,73 @@ body {
   flex: 1;
   font-size: 1em;
   text-align: left;
+  margin-top: 100px;
 }
 
 p {
   text-align: center;
-  padding: 20px;
+  padding: 10px 80px 10px 80px;
   margin:40px;
+  font-size: 3em;
+  font-weight:400;
 }
 .tale{
-  margin: 0 20px 0 20px;
+  margin: 0 10px 0 10px;
   text-align: left;
+  font-size: 17px;
+
 }
 
 .testimonials {
-  grid-column-start: 2;
-  grid-column-end: 10;
-  grid-row-start: 8;
-  grid-row-end: 10;
-  font-size: 16px;
-  font-weight: 400;
-  padding:40px;
-  margin: 20px;
+  padding: 4rem;
+  margin-top: 20px;
+  background-color: #fdfaf5;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 
 .reviews {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-padding: 20px;
-text-align: left;
-}
-
-
-.testimonials:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row {
   display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
 .column {
-  flex: 50%;
-  padding: 20px;
+  flex: 100px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
 }
+.review{
+  text-align: center;
+  padding: 0;
+}
+.stars {
+  color: #030303;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 40px;
+}
+
+
 h3 {
   grid-column-start: 4;
   grid-column-end: 8;
   text-align: center;
 }
 
-.guests {
-  grid-column-start: 8;
-  grid-column-end: 10;
-  text-align: center;
-  margin-top: 40px;
-  font-size: 25px;
-  padding:20px;
-}
+
 
 .otbt {
   font-family: "Alex Brush", cursive;
@@ -475,6 +487,7 @@ footer p {
   max-width: 800px;
   width: 100%;
   text-align: center;
+  color: #f2f2f2;
 }
 
 footer a {
@@ -486,6 +499,7 @@ footer a {
 footer i.material-icons {
   vertical-align: middle;
   margin-right: 5px;
+  color: #f2f2f2;
 }
 
 .social-icons {
@@ -541,7 +555,7 @@ footer, footer * {
   footer {
     width: 100%;
     text-align: center;
-    padding: 15px;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     clear: both;
@@ -590,13 +604,12 @@ footer, footer * {
     font-size: 1em;
     padding: 10px 0;
   }
-  .guests{
-    font-size: 10px;
-  }
   .reviews {
     grid-template-columns: 1fr;
+  }
+
+  .section-title {
     text-align: center;
-    font-size: 8px;
   }
 }
 
@@ -680,6 +693,10 @@ footer, footer * {
     height: 8px;
     width: 8px;
     margin: 0 3px;
+  }
+  .slideshow-text{
+    font-size:1.5em;
+   
   }
 
   footer {
